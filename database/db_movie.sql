@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 --
 -- Table structure for table `tbl_bookings`
 --
-CREATE DATABASE IF NOT EXISTS `db_movie`;
+CREATE DATABASE IF NOT EXISTS `cineplex`;
 CREATE TABLE IF NOT EXISTS `tbl_bookings` (
   `book_id` int(11) NOT NULL AUTO_INCREMENT,
   `ticket_id` varchar(30) NOT NULL,
