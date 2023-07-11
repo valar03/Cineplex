@@ -42,7 +42,7 @@ include('header.php');
               </div>
               <div class="form-group">
                 <label class="control-label">Place</label>
-                <input type="text" name="place" id="autocomplete" onFocus="geolocate()" class="form-control">
+                <input type="text" name="place" class="form-control">
                 <?php $frm->validate("place",array("required","label"=>"Place")); // Validating form using form builder written in form.php ?>
               </div>
               <div class="form-group">
