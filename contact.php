@@ -193,13 +193,18 @@
               <textarea name="cmsg" placeholder="Enter your message"></textarea>
             </div>
             <div class="button1">
-              <input type="submit" name="cont" value="Send Now" class="button1"/>
+              <input type="submit" name="cont" value="Send Now" class="button1" onclick="thanks()"/>
             </div>
           </form>
         </div>
       </div>
     </div>
   </body>
+  <script>
+function thanks() {
+  alert("Thank you for your valuable feedback!");
+}
+</script>
   <?php include('footer.php'); ?>
 
   <?php
