@@ -88,8 +88,9 @@ CREATE TABLE IF NOT EXISTS `tbl_login` (
 -- Dumping data for table `tbl_login`
 --
 
-/*INSERT INTO `tbl_login` (`id`, `user_id`, `username`, `password`, `user_type`) VALUES
-(1, 0, 'admin', 'password', 0),
+INSERT INTO `tbl_login` (`id`, `user_id`, `username`, `password`, `user_type`) VALUES
+(1, 0, 'admin', 'password', 0);
+/*
 (2, 3, 'theatre', 'password', 1),
 (3, 4, 'theatre2', 'password', 1),
 (4, 5, 'USR858911', 'PWD608112', 1),
