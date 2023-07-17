@@ -13,7 +13,7 @@ if(mysqli_num_rows($qry))
 		$_SESSION['user']=$usr['user_id'];
 		if(isset($_SESSION['show']))
 		{
-			header('location:booking.php');
+			header('location:seat/seat.php');
 		}
 		else
 		{
