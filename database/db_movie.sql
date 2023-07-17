@@ -227,7 +227,6 @@ CREATE TABLE IF NOT EXISTS `tbl_shows` (
   `start_date` date NOT NULL,
   `status` int(11) NOT NULL COMMENT '1 means show available',
   `r_status` int(11) NOT NULL,
-  `nos` int(11) ,
   PRIMARY KEY (`s_id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=19 ;
 
