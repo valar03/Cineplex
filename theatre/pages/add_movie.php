@@ -64,12 +64,35 @@ include('header.php');
             </div>
             <div class="form-group">
               <label class="control-label">Language</label>
-              <input type="text" name="lang" class="form-control"/>
-              
+              <select name="lang" class="form-control">
+                <option value>Select Language</option>
+                <?php
+                  $lan=mysqli_query($con,"select * from lang");
+                  while($lg=mysqli_fetch_array($lan))
+                  {
+                    ?>
+                    <option value="<?php echo $lg['lang_id']; ?>"><?php echo $lg['lang']; ?></option>
+                    <?php
+                  }
+                ?>
+              </select>
+              <?php $frm->validate("lang",array("required","label"=>"lang")); // Validating form using form builder written in form.php ?>
             </div>
             <div class="form-group">
               <label class="control-label">Genre</label>
-              <input type="text" name="genre" class="form-control"/>
+              <select name="genre" class="form-control">
+                <option value>Select genre</option>
+                <?php
+                  $gen=mysqli_query($con,"select * from genre");
+                  while($gr=mysqli_fetch_array($gen))
+                  {
+                    ?>
+                    <option value="<?php echo $gr['genre_id']; ?>"><?php echo $gr['genre']; ?></option>
+                    <?php
+                  }
+                ?>
+              </select>
+              <?php $frm->validate("genre",array("required","label"=>"genre")); // Validating form using form builder written in form.php ?>
             </div>
             <div class="form-group">
               <button type="submit" class="btn btn-success">Add Movie</button>
