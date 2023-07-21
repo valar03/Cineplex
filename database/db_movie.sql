@@ -45,14 +45,12 @@ CREATE TABLE IF NOT EXISTS `tbl_bookings` (
 --
 -- Dumping data for table `tbl_bookings`
 --
-/*
+
 INSERT INTO `tbl_bookings` (`book_id`, `ticket_id`, `t_id`, `user_id`, `show_id`, `screen_id`, `no_seats`, `amount`, `ticket_date`, `date`, `status`) VALUES
-(3, '', 4, 4, 3, 3, 200, 75, '2019-12-21', '2019-12-21', 1),
-(4, '', 4, 4, 1, 3, 2, 150, '2019-12-22', '2019-12-22', 1),
-(5, '', 3, 3, 6, 1, 200, 70, '2019-12-25', '2019-12-22', 1),
-(6, '', 3, 3, 6, 1, 100, 70, '2019-12-22', '2019-12-22', 1),
-(7, '', 3, 3, 5, 1, 1, 70, '2019-12-22', '2019-12-22', 1),
-(11, 'BKID5258816', 4, 2, 3, 3, 1, 75, '2019-12-22', '2019-12-22', 1);*/
+(12, 'BKID1415876', 15, 4, 19, 5, 4,'4D,4E,4F,4G',400, '2023-07-12', '2023-07-11', 1),
+(14, 'BKID2260051', 16, 4, 21, 7, 4,'6E,6F,6G,6H', 600, '2023-07-18', '2023-07-17', 1),
+(15, 'BKID1581951', 15, 4, 20, 6, 4,'9E,9F,9G,9H', 600, '2023-07-19', '2023-07-18', 1),
+(16, 'BKID2055363', 15, 4, 20, 6, 3,'6E,6F,6G', 450, '2023-07-22', '2023-07-21', 1);
 
 -- --------------------------------------------------------
 
@@ -90,21 +88,9 @@ CREATE TABLE IF NOT EXISTS `tbl_login` (
 
 INSERT INTO `tbl_login` (`id`, `user_id`, `username`, `password`, `user_type`) VALUES
 (1, 0, 'admin', 'password', 0);
-/*
-(2, 3, 'theatre', 'password', 1),
-(3, 4, 'theatre2', 'password', 1),
-(4, 5, 'USR858911', 'PWD608112', 1),
-(5, 6, 'USR389436', 'PWD214748', 1),
-(6, 7, 'USR389436', 'PWD214748', 1),
-(7, 8, 'USR389436', 'PWD214748', 1),
-(8, 9, 'USR503036', 'PWD713319', 1),
-(9, 10, 'USR447274', 'PWD420652', 1),
-(10, 11, 'USR486163', 'PWD790452', 1),
-(12, 2, 'rahulreghunath11@gmail.com', 'rahul', 2),
-(13, 12, 'USR568113', 'PWD334935', 1),
-(14, 13, 'USR280780', 'PWD906419', 1),
-(15, 14, 'USR295127', 'PWD195747', 1),
-(16, 3, 'vishnut300@gmail.com', 'vishnut300', 2);*/
+(17, 4, 'valarmathi3690@gmail.com', 'd44cf7b4afada752690d524c4156e71e', 2),
+(18, 15, 'kasi', 'password', 1),
+(19, 16, 'marina', 'password', 1);
 
 -- --------------------------------------------------------
 
@@ -130,13 +116,12 @@ CREATE TABLE IF NOT EXISTS `tbl_movie` (
 --
 -- Dumping data for table `tbl_movie`
 --
-/*
+
 INSERT INTO `tbl_movie` (`movie_id`, `t_id`, `movie_name`, `cast`, `desc`, `release_date`, `image`, `video_url`, `status`) VALUES
-(1, 3, 'Sakhav', 'Nivin', 'This story revolves around a student political leader who fights for his left-wing ideals. When some people try to use him in order to fulfill their intentions, he is forced to fight for his ideals.', '2018-01-01', 'images/maxresdefault.jpg', 'https://www.youtube.com/watch?v=x_AK7HWpJ-0', 0),
-(2, 3, 'Comarade In America', 'Dulquer Salmaan', 'Aji Mathew is a lovable, courageous, and modest youngster who hails from Pala. He meets a girl named Sara at college, and they fall in love regardless of their upbringing.', '2019-12-12', 'images/cia-new-poster-759.jpeg', 'https://www.youtube.com/watch?v=f5nvCp0QFdA', 0),
-(3, 3, 'Angamaly Diaries', ' Reshma Rajan, Tito Wilson, Sarath Kumar', 'Angamaly Diaries is a 2019 Indian Malayalam-language crime drama film directed by Lijo Jose Pellissery and written by Chemban Vinod Jose.', '2019-12-01', 'images/angamaly-diaries-2.jpg', 'https://www.youtube.com/watch?v=4yRBJCrjabU', 0),
-(8, 3, 'Godha', 'Tovino Thomas, Wamiqa Gabbi ', 'Godha is an Malayalam Sports-Comedy movie directed by Basil Joseph, starring Tovino Thomas, Wamiqa Gabbi and Renji Panicker in the lead roles', '2019-12-19', 'images/godha.jpg', 'https://www.youtube.com/watch?v=hnICGugY6fI', 0),
-(10, 3, 'Ramante Edanthottam', 'Kunchacko Boban, Anu Sithara', 'Ramante Edanthottam is an upcoming Malayalam language film written produced and directed by Ranjith Shankar.', '2019-12-12', 'images/raman.jpg', 'https://www.youtube.com/watch?v=H6HK51qVdmc', 0);
+(11, 15, 'Thankam', 'Girish,Vineeth,Biju,Aparna', 'The movie portrays their travel to Mumbai to distribute gold and the following mishaps they face at their journey.', '2023-07-14', 'images/thankam.jpg', 'https://youtu.be/FZ1IhRZ8o_Y', 0,2,2),
+(12, 15, 'Ponniyin Selvan 2', 'Vikram, Aishwarya Rai Bachchan, Karthi, Trisha', 'Arulmozhi Varman continues on his journey to become Rajaraja I, the greatest ruler of the historic Chola empire of south India.', '2023-04-08', 'images/ps2.jpg', 'https://www.youtube.com/watch?v=EnhS3matIoU', 0, 2, 1),
+(13, 15, 'Barbie', 'Margot Robbie ,Ryan Gosling , Ariana Greenblatt , America Ferrera ', 'To live in Barbie Land is to be a perfect being in a perfect place. Unless you have a full-on existential crisis. Or you`re a Ken.', '2023-07-20', 'images/barbie.jfif', 'https://youtu.be/qcGMKd8iego', 0, 1, 5),
+(16, 15, 'Love Today', 'Pradeep Ranganathan,Ivana,Yogi Babu,Raveena Ravi', 'While a couple is deeply in love, the girls father challenges the two to switch their phones with each other to test their relationship. Chaos ensues as the lovers secrets are unearthed.', '2022-04-21', 'images/lovetoday.jpg', 'https://www.youtube.com/watch?v=FaQe8JFGdaM', 0 ,2, 3);
 
 -- --------------------------------------------------------
 */
@@ -183,10 +168,8 @@ CREATE TABLE IF NOT EXISTS `tbl_registration` (
 -- Dumping data for table `tbl_registration`
 --
 
-/*INSERT INTO `tbl_registration` (`user_id`, `name`, `email`, `phone`, `age`, `gender`) VALUES
-(1, 'rahul', '', '9037500119', 23, 'gender'),
-(2, 'rahul', 'rahulreghunath11@gmail.com', '9037500119', 23, 'gender'),
-(3, 'vishnu', 'vishnut300@gmail.com', '8156820497', 22, 'gender');*/
+INSERT INTO `tbl_registration` (`user_id`, `name`, `email`, `phone`, `age`, `gender`) VALUES
+(4, 'Valar', 'valarmathi3690@gmail.com', '9445729893', 20, 'Female');
 
 -- --------------------------------------------------------
 
@@ -207,11 +190,10 @@ CREATE TABLE IF NOT EXISTS `tbl_screens` (
 -- Dumping data for table `tbl_screens`
 --
 
-/*INSERT INTO `tbl_screens` (`screen_id`, `t_id`, `screen_name`, `seats`, `charge`) VALUES
-(1, 3, 'Screen 1', 100, 70),
-(2, 3, 'Screen 2', 150, 60),
-(3, 4, 'Screen 1', 200, 75),
-(4, 14, 'Screen1', 34, 120);*/
+INSERT INTO `tbl_screens` (`screen_id`, `t_id`, `screen_name`, `seats`, `charge`) VALUES
+(5, 15, 'Screen1', 100, 100),
+(6, 15, 'imax', 200, 150),
+(7, 16, 'imax', 150, 150);
 
 -- --------------------------------------------------------
 
@@ -234,25 +216,11 @@ CREATE TABLE IF NOT EXISTS `tbl_shows` (
 -- Dumping data for table `tbl_shows`
 --
 
-/*INSERT INTO `tbl_shows` (`s_id`, `st_id`, `theatre_id`, `movie_id`, `start_date`, `status`, `r_status`) VALUES
-(1, 9, 4, 1, '2019-12-01', 1, 1),
-(2, 10, 4, 1, '2019-12-01', 1, 1),
-(3, 11, 4, 2, '2019-12-01', 1, 1),
-(4, 12, 4, 2, '2019-12-01', 1, 1),
-(5, 1, 3, 1, '2019-12-01', 1, 1),
-(6, 2, 3, 1, '2019-12-01', 1, 1),
-(7, 3, 3, 1, '2019-12-01', 1, 1),
-(8, 4, 3, 1, '2019-12-01', 1, 1),
-(9, 5, 3, 2, '2019-12-01', 1, 1),
-(10, 6, 3, 2, '2019-12-01', 1, 1),
-(11, 7, 3, 2, '2019-12-01', 1, 1),
-(12, 8, 3, 2, '2019-12-01', 1, 1),
-(13, 1, 3, 10, '2019-02-25', 1, 0),
-(14, 2, 3, 10, '2019-02-25', 1, 0),
-(15, 9, 4, 8, '2019-12-28', 1, 0),
-(16, 10, 4, 8, '2019-12-28', 1, 0),
-(17, 11, 4, 8, '2019-12-28', 1, 0),
-(18, 12, 4, 8, '2019-12-28', 1, 0);*/
+INSERT INTO `tbl_shows` (`s_id`, `st_id`, `theatre_id`, `movie_id`, `start_date`, `status`, `r_status`) VALUES
+(19, 16, 15, 11, '2023-07-11', 1, 1),
+(20, 18, 15, 12, '2023-07-17', 1, 1),
+(21, 19, 16, 12, '2023-07-17', 1, 1),
+(22, 17, 15, 13, '2023-07-21', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -307,20 +275,10 @@ CREATE TABLE IF NOT EXISTS `tbl_theatre` (
 -- Dumping data for table `tbl_theatre`
 --
 
-/*INSERT INTO `tbl_theatre` (`id`, `name`, `address`, `place`, `state`, `pin`) VALUES
-(2, 'Nayanam', 'Adoor', 'Adoor', 'Kerala', 691523),
-(3, 'Nadam', 'Adoor', 'Adoor, Kerala, India', 'Kerala', 691523),
-(4, 'Smitha', 'Adoor', 'adoor', 'Kerala', 691523),
-(5, 'Smitha', 'Adoor', 'adoor', 'Kerala', 691523),
-(6, 'rty', 'ryty', 'rty', 'tryt', 545),
-(7, 'rty', 'ryty', 'rty', 'tryt', 545),
-(8, 'rty', 'ryty', 'rty', 'tryt', 545),
-(9, 'dgd', 'dgf', 'Mannady, Chennai, Tamil Nadu, India', 'Tamil Nadu', 600001),
-(10, 'vxcv', 'sdfs', 'Mannady, Prakasam Road, George Town, Chennai, Tamil Nadu, India', 'Tamil Nadu', 600001),
-(11, '', '', '', '', 0),
-(12, '', '', '', '', 0),
-(13, 'rye', 'yetyy', 'Yeyeye Hotel, Changchun, Jilin, China', 'Jilin Sheng', 130012),
-(14, 'Trinity Movies', 'Pathanamthtta', 'Pathanamthitta, Kerala, India', 'Kerala', 691554);*/
+INSERT INTO `tbl_theatre` (`id`, `name`, `address`, `place`, `state`, `pin`) VALUES
+(15, 'Kasi Theatres', 'Ashok Nagar', 'Chennai', 'TamilNadu', 600065),
+(16, 'Marina Mall', 'Padur', 'Chennai', 'TamilNadu', 600878);
+
 
 CREATE TABLE IF NOT EXISTS `genre` (
   `genre_id` int(11) NOT NULL AUTO_INCREMENT,
