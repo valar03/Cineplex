@@ -9,14 +9,18 @@
     $flname = "images/" . basename($_FILES["image"]["name"]);
 
     $lang_query = "SELECT lang_id FROM lang WHERE lang = '".$_POST['lang']."'";
-    $lang_result = mysqli_query($con, $lang_query);
-    $lang_row = mysqli_fetch_array($lang_result);
-    $lang = $lang_row['lang_id'];
+    $lang_result=$con->query($lang_query);
+    if ($lang_result->num_rows > 0) {
+        $lang_row = $lang_result->fetch_assoc();
+        $lang = $lang_row['lang_id'];
+    }
 
     $genre_query = "SELECT genre_id FROM genre WHERE genre = '".$_POST['genre']."'";
-    $genre_result = mysqli_query($con, $genre_query);
-    $genre_row = mysqli_fetch_array($genre_result);
-    $genre = $genre_row['genre_id'];
+    $genre_result=$con->query($genre_query);
+    if ($genre_result->num_rows > 0) {
+        $genre_row = $genre_result->fetch_assoc();
+        $genre = $genre_row['genre_id'];
+    }
 
     $desc = mysqli_real_escape_string($con, $desc);
 
