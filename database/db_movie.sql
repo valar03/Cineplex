@@ -144,9 +144,9 @@ CREATE TABLE IF NOT EXISTS `tbl_news` (
 --
 
 INSERT INTO `tbl_news` (`news_id`, `name`, `cast`, `news_date`, `description`, `attachment`) VALUES
-(3, 'Leo', ' Vijay , Trisha ', '2023-10-19', 'Reported to be a gangster drama 'Leo' will see Vijay as a ruthless gangster, and the pan-Indian drama also has Sanjay Dut, Trisha, Arjun Sarja, Gautham Menon, Priya Anand, Mansoor Ali Khan, Mysskin, Sandy, and Mathew Thomas among others in important roles.', 'news_images/leo.jpg'),
-(5, 'Jailer', ' Rajinikanth , Tamannaah Bhatia ,  Ramya Krishnan ', '2023-08-10', 'Muthuvel Pandian is a strict yet empathetic jailer who sets out to stop a gang from trying to rescue their leader from the prison.', 'news_images/jailer.jpg'),
-(6, 'Maamanan', ' Vadivelu , Fahadh Faasil , Keerthy Suresh , Udhayanidhi Stalin ', '2023-07-29', 'A veteran statesman and his son are pulled into a violent power struggle when a cold-blooded political scion pursues a vengeful rise.', 'news_images/maamanan.jpg');
+(3, 'Leo', ' Vijay , Trisha ', '2023-10-19', 'Reported to be a gangster drama 'Leo' will see Vijay as a ruthless gangster, and the pan-Indian drama also has Sanjay Dut, Trisha, Arjun Sarja, Gautham Menon, Priya Anand, Mansoor Ali Khan, Mysskin, Sandy, and Mathew Thomas among others in important roles.', '../images/leo.jpg'),
+(5, 'Jailer', ' Rajinikanth , Tamannaah Bhatia ,  Ramya Krishnan ', '2023-08-10', 'Muthuvel Pandian is a strict yet empathetic jailer who sets out to stop a gang from trying to rescue their leader from the prison.', '../images/jailer.jpg'),
+(6, 'Maamanan', ' Vadivelu , Fahadh Faasil , Keerthy Suresh , Udhayanidhi Stalin ', '2023-07-29', 'A veteran statesman and his son are pulled into a violent power struggle when a cold-blooded political scion pursues a vengeful rise.', '../images/maamanan.jpg');
 
 -- --------------------------------------------------------
 
