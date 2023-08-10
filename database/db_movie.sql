@@ -46,7 +46,7 @@ CREATE TABLE IF NOT EXISTS `tbl_bookings` (
 -- Dumping data for table `tbl_bookings`
 --
 
-INSERT INTO `tbl_bookings` (`book_id`, `ticket_id`, `t_id`, `user_id`, `show_id`, `screen_id`, `no_seats`, `amount`, `ticket_date`, `date`, `status`) VALUES
+INSERT INTO `tbl_bookings` (`book_id`, `ticket_id`, `t_id`, `user_id`, `show_id`, `screen_id`, `no_seats`,`seatno`, `amount`, `ticket_date`, `date`, `status`) VALUES
 (12, 'BKID1415876', 15, 4, 19, 5, 4,'4D,4E,4F,4G',400, '2023-07-12', '2023-07-11', 1),
 (14, 'BKID2260051', 16, 4, 21, 7, 4,'6E,6F,6G,6H', 600, '2023-07-18', '2023-07-17', 1),
 (15, 'BKID1581951', 15, 4, 20, 6, 4,'9E,9F,9G,9H', 600, '2023-07-19', '2023-07-18', 1),
@@ -87,7 +87,7 @@ CREATE TABLE IF NOT EXISTS `tbl_login` (
 --
 
 INSERT INTO `tbl_login` (`id`, `user_id`, `username`, `password`, `user_type`) VALUES
-(1, 0, 'admin', 'password', 0);
+(1, 0, 'admin', 'password', 0),
 (17, 4, 'valarmathi3690@gmail.com', 'd44cf7b4afada752690d524c4156e71e', 2),
 (18, 15, 'kasi', 'password', 1),
 (19, 16, 'marina', 'password', 1);
@@ -117,14 +117,14 @@ CREATE TABLE IF NOT EXISTS `tbl_movie` (
 -- Dumping data for table `tbl_movie`
 --
 
-INSERT INTO `tbl_movie` (`movie_id`, `t_id`, `movie_name`, `cast`, `desc`, `release_date`, `image`, `video_url`, `status`) VALUES
+INSERT INTO `tbl_movie` (`movie_id`, `t_id`, `movie_name`, `cast`, `desc`, `release_date`, `image`, `video_url`, `status` , `lang_id`,`genre_id`) VALUES
 (11, 15, 'Thankam', 'Girish,Vineeth,Biju,Aparna', 'The movie portrays their travel to Mumbai to distribute gold and the following mishaps they face at their journey.', '2023-07-14', 'images/thankam.jpg', 'https://youtu.be/FZ1IhRZ8o_Y', 0,2,2),
 (12, 15, 'Ponniyin Selvan 2', 'Vikram, Aishwarya Rai Bachchan, Karthi, Trisha', 'Arulmozhi Varman continues on his journey to become Rajaraja I, the greatest ruler of the historic Chola empire of south India.', '2023-04-08', 'images/ps2.jpg', 'https://www.youtube.com/watch?v=EnhS3matIoU', 0, 2, 1),
 (13, 15, 'Barbie', 'Margot Robbie ,Ryan Gosling , Ariana Greenblatt , America Ferrera ', 'To live in Barbie Land is to be a perfect being in a perfect place. Unless you have a full-on existential crisis. Or you`re a Ken.', '2023-07-20', 'images/barbie.jfif', 'https://youtu.be/qcGMKd8iego', 0, 1, 5),
 (16, 15, 'Love Today', 'Pradeep Ranganathan,Ivana,Yogi Babu,Raveena Ravi', 'While a couple is deeply in love, the girls father challenges the two to switch their phones with each other to test their relationship. Chaos ensues as the lovers secrets are unearthed.', '2022-04-21', 'images/lovetoday.jpg', 'https://www.youtube.com/watch?v=FaQe8JFGdaM', 0 ,2, 3);
 
 -- --------------------------------------------------------
-*/
+
 --
 -- Table structure for table `tbl_news`
 --
@@ -144,7 +144,7 @@ CREATE TABLE IF NOT EXISTS `tbl_news` (
 --
 
 INSERT INTO `tbl_news` (`news_id`, `name`, `cast`, `news_date`, `description`, `attachment`) VALUES
-(3, 'Leo', ' Vijay , Trisha ', '2023-10-19', 'Reported to be a gangster drama 'Leo' will see Vijay as a ruthless gangster, and the pan-Indian drama also has Sanjay Dut, Trisha, Arjun Sarja, Gautham Menon, Priya Anand, Mansoor Ali Khan, Mysskin, Sandy, and Mathew Thomas among others in important roles.', 'images/leo.jfif'),
+(3, 'Leo', ' Vijay , Trisha ', '2023-10-19', 'Reported to be a gangster drama Leo will see Vijay as a ruthless gangster, and the pan-Indian drama also has Sanjay Dut, Trisha, Arjun Sarja, Gautham Menon, Priya Anand, Mansoor Ali Khan, Mysskin, Sandy, and Mathew Thomas among others in important roles.', 'images/leo.jfif'),
 (5, 'Jailer', ' Rajinikanth , Tamannaah Bhatia ,  Ramya Krishnan ', '2023-08-10', 'Muthuvel Pandian is a strict yet empathetic jailer who sets out to stop a gang from trying to rescue their leader from the prison.', 'images/jailer.jfif'),
 (6, 'Maamanan', ' Vadivelu , Fahadh Faasil , Keerthy Suresh , Udhayanidhi Stalin ', '2023-07-29', 'A veteran statesman and his son are pulled into a violent power struggle when a cold-blooded political scion pursues a vengeful rise.', 'images/maamanan.jfif');
 
