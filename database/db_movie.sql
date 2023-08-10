@@ -143,11 +143,11 @@ CREATE TABLE IF NOT EXISTS `tbl_news` (
 -- Dumping data for table `tbl_news`
 --
 
-/*INSERT INTO `tbl_news` (`news_id`, `name`, `cast`, `news_date`, `description`, `attachment`) VALUES
-(3, 'The Mummy', 'Tom Cruiz', '2019-06-15', 'Thought safely entombed in a crypt deep beneath the desert, an ancient princess whose destiny was unjustly taken from her is awakened in the modern era', 'news_images/mummy.jpg'),
-(5, 'Transformers: The Last Knight', ' Mark Wahlberg , Isabela Moner ', '2019-07-21', 'Humans are at war with the Transformers, and Optimus Prime is gone. The key to saving the future lies buried in the secrets of the past and the hidden history of Transformers on Earth', 'news_images/tra.jpg'),
-(6, 'Tiyan', 'Privthi Raj,Indrajith', '2019-10-18', 'Tiyaan is an upcoming Indian Malayalam film written by Murali Gopy and directed by Jiyen Krishnakumar.', 'news_images/tiyan.jpg');
-*/
+INSERT INTO `tbl_news` (`news_id`, `name`, `cast`, `news_date`, `description`, `attachment`) VALUES
+(3, 'Leo', ' Vijay , Trisha ', '2023-10-19', 'Reported to be a gangster drama 'Leo' will see Vijay as a ruthless gangster, and the pan-Indian drama also has Sanjay Dut, Trisha, Arjun Sarja, Gautham Menon, Priya Anand, Mansoor Ali Khan, Mysskin, Sandy, and Mathew Thomas among others in important roles.', 'news_images/leo.jpg'),
+(5, 'Jailer', ' Rajinikanth , Tamannaah Bhatia ,  Ramya Krishnan ', '2023-08-10', 'Muthuvel Pandian is a strict yet empathetic jailer who sets out to stop a gang from trying to rescue their leader from the prison.', 'news_images/jailer.jpg'),
+(6, 'Maamanan', ' Vadivelu , Fahadh Faasil , Keerthy Suresh , Udhayanidhi Stalin ', '2023-07-29', 'A veteran statesman and his son are pulled into a violent power struggle when a cold-blooded political scion pursues a vengeful rise.', 'news_images/maamanan.jpg');
+
 -- --------------------------------------------------------
 
 --
